@@ -1,10 +1,10 @@
-// import { Toaster } from "sonner";
+import { Toaster } from "sonner";
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ConvexClientProvider } from '@/components/providers/convex-provider'
-// import { ModalProvider } from "@/components/providers/modal-provider";
+import { ModalProvider } from "@/components/providers/modal-provider";
 // import { EdgeStoreProvider } from "@/lib/edgestore";
 
 import './globals.css'
@@ -41,8 +41,8 @@ export default function RootLayout({
               disableTransitionOnChange
               storageKey="Notion-theme-2"
             >
-              {/* <Toaster position="bottom-center" />
-              <ModalProvider /> */}
+              <Toaster position="bottom-center" />
+              <ModalProvider />
               {children}
             </ThemeProvider>
           {/* </EdgeStoreProvider> */}
